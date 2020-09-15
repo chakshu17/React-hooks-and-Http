@@ -1,14 +1,19 @@
 import React from 'react';
 
 import './App.css';
-import PostList from './HTTP/PostList';
+import PostForm from './HTTP/PostForm';
 
 function App() {
   return (
     <div className="App">
-      <PostList/>
+    <PostForm/>
+ 
     </div>
   );
 }
 
 export default App;
+
+
+// Get request:
+// <PostList/>
