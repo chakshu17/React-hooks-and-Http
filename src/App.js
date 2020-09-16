@@ -1,18 +1,20 @@
 import React from "react";
 import "./App.css";
-import IntervalClassCounter from "./Hooks/useEffect/IntervalClassCounter";
-import IntervalHookCounter from "./Hooks/useEffect/IntervalHookCounter";
-import MouseContainer from "./Hooks/useEffect/MouseContainer";
+import DataFecthingInput from "./Hooks/useEffect/Fetch Data/DataFecthingInput";
+
 function App() {
 	return (
 		<div className="App">
-      <IntervalClassCounter/>
-	<IntervalHookCounter/>
+	<DataFecthingInput/>
 		</div>
 	);
 }
 
 export default App;
+// data fetching
+// <Datafetching/>
+
+
 //UseEffect
 
 //1. <HookCounterOne/>
