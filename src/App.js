@@ -1,11 +1,10 @@
 import React from "react";
 import "./App.css";
-import ClassMouse from "./Hooks/useEffect/ClassMouse";
-import HookMouse from "./Hooks/useEffect/HookMouse";
+import MouseContainer from "./Hooks/useEffect/MouseContainer";
 function App() {
 	return (
 		<div className="App">
-			<HookMouse />
+		<MouseContainer/>
 		</div>
 	);
 }
@@ -15,6 +14,7 @@ export default App;
 
 //1. <HookCounterOne/>
 //2. useEffect only once: <HookMouse/>
+//3. useEffect with Cleanup: <MouseContainer/>
 
 //useState with array:       <HookCounterFour/>
 
