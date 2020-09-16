@@ -1,16 +1,23 @@
 import React from 'react';
 import './App.css';
-import HookCounterFour from './Hooks/useState/HookCounterFour';
-
+import HookCounterOne from './Hooks/useEffect/HookCounterOne';
 function App() {
   return (
     <div className="App">
-     <HookCounterFour/>
+   
+    <HookCounterOne/>
     </div>
   );
 }
 
 export default App;
+//UseEffect
+
+
+
+
+
+
 //useState with array:       <HookCounterFour/>
 
 
