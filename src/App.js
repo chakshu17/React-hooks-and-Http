@@ -1,10 +1,13 @@
 import React from "react";
 import "./App.css";
+import IntervalClassCounter from "./Hooks/useEffect/IntervalClassCounter";
+import IntervalHookCounter from "./Hooks/useEffect/IntervalHookCounter";
 import MouseContainer from "./Hooks/useEffect/MouseContainer";
 function App() {
 	return (
 		<div className="App">
-		<MouseContainer/>
+      <IntervalClassCounter/>
+	<IntervalHookCounter/>
 		</div>
 	);
 }
@@ -15,6 +18,7 @@ export default App;
 //1. <HookCounterOne/>
 //2. useEffect only once: <HookMouse/>
 //3. useEffect with Cleanup: <MouseContainer/>
+//4. useEffect with incorrrect dependency:  	<IntervalHookCounter/>
 
 //useState with array:       <HookCounterFour/>
 
