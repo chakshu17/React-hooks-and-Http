@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 function HookCounterOne() {
 	const [count, setCount] = useState(0);
-with  const [name, setName] = useState("");
+  const [name, setName] = useState("");
   
 	useEffect(() => {
 		console.log("UseEffect updating hooks Copuunter");
