@@ -1,32 +1,27 @@
-import React from 'react';
-import './App.css';
-import ClassCounterOne from './Hooks/useEffect/ClassCounterOne';
-import HookCounterOne from './Hooks/useEffect/HookCounterOne';
+import React from "react";
+import "./App.css";
+import ClassMouse from "./Hooks/useEffect/ClassMouse";
+import HookMouse from "./Hooks/useEffect/HookMouse";
 function App() {
-  return (
-    <div className="App">
-   {/* <ClassCounterOne/> */}
-    <HookCounterOne/>
-    </div>
-  );
+	return (
+		<div className="App">
+			<HookMouse />
+		</div>
+	);
 }
 
 export default App;
 //UseEffect
 
 //1. <HookCounterOne/>
-
-
-
-
+//2. useEffect only once: <HookMouse/>
 
 //useState with array:       <HookCounterFour/>
 
-
 // <HookCounterThree/>
-// useState with object: ...name, like this,Spread operator, 
+// useState with object: ...name, like this,Spread operator,
 // this means that all the object , data is passed but only one is edited which is mentioned after it.
-// acc to condition 
+// acc to condition
 
 //UseState
 //  <HookCounterTwo/>
@@ -34,11 +29,8 @@ export default App;
 // when you have to update the value regarding the previous state , always
 // use function like HookCOunterTwo: increment 5
 
-
-
 //  Use hooks at top level:don't use it in loops, nested funtions or condirtions
 //  Onlycall hooks from react Function
-
 
 //functional hooks
 //     <HookCounter/>
