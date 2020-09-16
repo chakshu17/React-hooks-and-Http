@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import ClassCounterOne from './Hooks/useEffect/ClassCounterOne';
 import HookCounterOne from './Hooks/useEffect/HookCounterOne';
 function App() {
   return (
     <div className="App">
-   
+   {/* <ClassCounterOne/> */}
     <HookCounterOne/>
     </div>
   );
@@ -13,6 +14,7 @@ function App() {
 export default App;
 //UseEffect
 
+//1. <HookCounterOne/>
 
 
 
