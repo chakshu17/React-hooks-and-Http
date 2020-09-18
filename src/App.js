@@ -1,19 +1,32 @@
 import React from "react";
 import "./App.css";
-import DataFecthingInput from "./Hooks/useEffect/Fetch Data/DataFecthingInput";
+import ComponentC from "./Hooks/useContext/ComponentC";
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
 	return (
 		<div className="App">
-	<DataFecthingInput/>
+			<UserContext.Provider value={"Chakshu"}>
+				<ChannelContext.Provider value={"Demon King"}>
+					<ComponentC />
+				</ChannelContext.Provider>
+			</UserContext.Provider>
 		</div>
 	);
 }
 
 export default App;
+// UseContext
+// context provides a way to pass data through component tree without
+// having to pass props down manually at every level
+
 // data fetching
 // <Datafetching/>
 
+// data fetching with specific id
+// 	<DataFecthingInput/>
 
 //UseEffect
 
