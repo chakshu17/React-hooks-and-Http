@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import ComponentC from "./Hooks/useContext/ComponentC";
+import Counter from "./Hooks/useMemo/Counter";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -8,16 +9,17 @@ export const ChannelContext = React.createContext();
 function App() {
 	return (
 		<div className="App">
-			<UserContext.Provider value={"Chakshu"}>
-				<ChannelContext.Provider value={"Demon King"}>
-					<ComponentC />
-				</ChannelContext.Provider>
-			</UserContext.Provider>
+		<Counter/>
 		</div>
 	);
 }
 
 export default App;
+// useMemo
+// 		<Counter/>
+
+
+
 // UseContext
 // context provides a way to pass data through component tree without
 // having to pass props down manually at every level
