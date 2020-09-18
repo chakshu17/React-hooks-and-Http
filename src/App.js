@@ -21,6 +21,13 @@ export default App;
 // UseContext
 // context provides a way to pass data through component tree without
 // having to pass props down manually at every level
+// Example for simple transfer of data to F component from App:
+
+// <UserContext.Provider value={"Chakshu"}>
+// <ChannelContext.Provider value={"Demon King"}>
+// 	<ComponentC />
+// </ChannelContext.Provider>
+// </UserContext.Provider>
 
 // data fetching
 // <Datafetching/>

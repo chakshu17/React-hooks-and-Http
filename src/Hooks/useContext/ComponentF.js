@@ -21,3 +21,20 @@ function ComponentF() {
 }
 
 export default ComponentF
+
+// Inital level of example
+// <div>
+// <UserContext.Consumer>
+//   {
+//     user=>{
+//       return (
+//         <ChannelContext.Consumer>
+//           { channel=>{
+//             return <div>User Context Value: {user}, channel : {channel} </div>
+//           }}
+//         </ChannelContext.Consumer>
+//       )
+//     }
+//   }
+// </UserContext.Consumer>
+// </div>
