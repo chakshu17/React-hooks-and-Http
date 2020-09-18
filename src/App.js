@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-import ComponentC from "./Hooks/useContext/ComponentC";
-import Counter from "./Hooks/useMemo/Counter";
+import ParentComponent from "./Hooks/useCallback/ParentComponent";
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -9,16 +8,17 @@ export const ChannelContext = React.createContext();
 function App() {
 	return (
 		<div className="App">
-		<Counter/>
+			<ParentComponent />
 		</div>
 	);
 }
 
 export default App;
+// useCallback: is a hook  that will return a meoized verion of chall back funtion that only changes if one of the dependencies  is changed
+// 	<ParentComponent/>
+
 // useMemo
 // 		<Counter/>
-
-
 
 // UseContext
 // context provides a way to pass data through component tree without
