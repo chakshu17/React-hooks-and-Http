@@ -1,15 +1,10 @@
 import React from "react";
 import "./App.css";
-import ClassTimer from "./Hooks/useRef/ClassTimer";
-import FocusInput from "./Hooks/useRef/FocusInput";
-import HookTimer from "./Hooks/useRef/HookTimer";
-
+import UserForm from './Hooks/useInputCustom/UserFrom'
 function App() {
 	return (
 		<div className="App">
-			<ClassTimer/>
-			<HookTimer/>
-	{/* <FocusInput/> */}
+				<UserForm/>
 		</div>
 	);
 }

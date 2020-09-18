@@ -4,7 +4,7 @@ import UseInput from "./UseInput";
 function UserFrom() {
 	// const [firstName, setFirstName] = useState("");
 	// const [lastName, setLastName] = useState("");
-
+	// this is form in which custom hook is used  for aksing user first and last name , binding and reseting the data 
   const[firstName,bindFirstName , resetFirstName]  = UseInput('')
   const[lastName,bindLastName , resetLastName]  = UseInput('')
 
