@@ -1,19 +1,19 @@
 import React from "react";
 import "./App.css";
-import ParentComponent from "./Hooks/useCallback/ParentComponent";
-
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+import UserFrom from "./Hooks/useInputCustom/UserFrom";
 
 function App() {
 	return (
 		<div className="App">
-			<ParentComponent />
+			<UserFrom />
 		</div>
 	);
 }
 
 export default App;
+
+//useInpput Custom
+
 // useCallback: is a hook  that will return a meoized verion of chall back funtion that only changes if one of the dependencies  is changed
 // 	<ParentComponent/>
 
@@ -21,6 +21,10 @@ export default App;
 // 		<Counter/>
 
 // UseContext
+
+// export const UserContext = React.createContext();
+// export const ChannelContext = React.createContext();
+
 // context provides a way to pass data through component tree without
 // having to pass props down manually at every level
 // Example for simple transfer of data to F component from App:
