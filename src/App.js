@@ -1,21 +1,31 @@
 import React from "react";
 import "./App.css";
-import UserFrom from "./Hooks/useInputCustom/UserFrom";
+import ClassTimer from "./Hooks/useRef/ClassTimer";
+import FocusInput from "./Hooks/useRef/FocusInput";
+import HookTimer from "./Hooks/useRef/HookTimer";
 
 function App() {
 	return (
 		<div className="App">
-			<UserFrom />
+			<ClassTimer/>
+			<HookTimer/>
+	{/* <FocusInput/> */}
 		</div>
 	);
 }
 
 export default App;
 
-//useInpput Custom
+//useInput Custom
 
 // useCallback: is a hook  that will return a meoized verion of chall back funtion that only changes if one of the dependencies  is changed
 // 	<ParentComponent/>
+
+
+// useRef
+// 	<FocusInput/>
+
+
 
 // useMemo
 // 		<Counter/>
